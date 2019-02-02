@@ -158,7 +158,7 @@ section {
   min-height: 100vh; }
   .hero .hero-background {
     position: absolute;
-    background-image: url("/dist/assets/HeroBackground.png");
+    background-image: url("../assets/HeroBackground.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
