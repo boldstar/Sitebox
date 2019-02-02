@@ -25,6 +25,12 @@ header {
         width: 100%;
         padding: 15px 10px;
 
+        .nav-collapsed {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
         a {
             
             .logo {
@@ -51,6 +57,7 @@ header {
         @media screen and (max-width: 800px) {
             .navbar {
                 padding: 20px 15px;
+                flex-direction: column !important;
             }
 
             .nav-btn {
@@ -68,7 +75,26 @@ header {
 
             nav {
                 display: none;
+
+                .navbar-nav {
+                    visibility: hidden;
+                    transition: 3s ease-in;
+                    text-align: right;
+                    margin-right: 10px;
+
+                    .nav-item {
+                        margin-bottom: 10px;
+                    }
+                }
             }
+        }
+    }
+
+    
+    @media screen and (max-width: 800px) {
+        .navbar {
+            padding: 20px 15px;
+            flex-direction: column !important;
         }
     }
 }

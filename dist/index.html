@@ -11,14 +11,13 @@
 <body>
     <header>
         <div class="navbar container">
-            <a href="/index.html"><img src="assets/Logo.png" alt="Sitebox Logo" class="logo"></a>
-
-            <div id="nav-btn">
-                <button type="button" class="nav-btn"><i class="fas fa-bars"></i></button>
+            <div id="nav-collapsed" class="nav-collapsed">
+                <a href="/index.html"><img src="assets/Logo.png" alt="Sitebox Logo" class="logo"></a>
+                <button type="button" class="nav-btn" id="nav-btn"><i class="fas fa-bars"></i></button>
             </div>
 
-            <nav>
-                <ul class="navbar-nav">
+            <nav id="nav">
+                <ul class="navbar-nav" id="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/index.html">What We Do</a></li>
                     <li class="nav-item"><a class="nav-link" href="/index.html">Portfolio</a></li>
@@ -56,5 +55,7 @@
     <section class="whatwedo">
         <h2>What We Do</h2>
     </section>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -118,6 +118,10 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 15px 10px; }
+    header .navbar .nav-collapsed {
+      display: flex;
+      width: 100%;
+      justify-content: space-between; }
     header .navbar a .logo {
       width: auto;
       height: 40px;
@@ -132,7 +136,8 @@ header {
       display: none; }
     @media screen and (max-width: 800px) {
       header .navbar .navbar {
-        padding: 20px 15px; }
+        padding: 20px 15px;
+        flex-direction: column !important; }
       header .navbar .nav-btn {
         margin-top: 5px;
         margin-right: 10px;
@@ -145,7 +150,18 @@ header {
         font-size: 1.2rem;
         color: #0077ff; }
       header .navbar nav {
-        display: none; } }
+        display: none; }
+        header .navbar nav .navbar-nav {
+          visibility: hidden;
+          transition: 3s ease-in;
+          text-align: right;
+          margin-right: 10px; }
+          header .navbar nav .navbar-nav .nav-item {
+            margin-bottom: 10px; } }
+  @media screen and (max-width: 800px) {
+    header .navbar {
+      padding: 20px 15px;
+      flex-direction: column !important; } }
 
 section {
   position: relative;
