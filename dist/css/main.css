@@ -111,7 +111,8 @@ header {
   position: absolute;
   display: flex;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   header .navbar {
     display: flex;
     justify-content: space-between;
@@ -127,6 +128,24 @@ header {
         margin-left: 40px;
         color: darkgray;
         font-weight: bold; }
+    header .navbar .nav-btn {
+      display: none; }
+    @media screen and (max-width: 800px) {
+      header .navbar .navbar {
+        padding: 20px 15px; }
+      header .navbar .nav-btn {
+        margin-top: 5px;
+        margin-right: 10px;
+        position: relative;
+        display: block;
+        border: 1px solid darkgray;
+        border-radius: 3px;
+        padding: 4px 12px;
+        background-color: transparent;
+        font-size: 1.2rem;
+        color: #0077ff; }
+      header .navbar nav {
+        display: none; } }
 
 section {
   position: relative;
@@ -151,6 +170,9 @@ section {
     position: absolute;
     max-width: 1000px;
     height: auto; }
+  @media screen and (max-width: 1000px) {
+    .hero .desktop-img {
+      display: none; } }
   .hero .inner-desktop {
     margin-bottom: 20px;
     display: flex;
@@ -195,3 +217,41 @@ section {
         height: 3.0rem;
         font-size: 1.25rem;
         margin: 20px; }
+  @media screen and (max-width: 850px) {
+    .hero .inner-desktop {
+      flex-direction: column-reverse;
+      align-items: center; }
+    .hero .hero-content {
+      margin-bottom: 50px; }
+      .hero .hero-content h1 {
+        font-size: 1.75rem !important; }
+      .hero .hero-content h2 {
+        font-size: 2.5rem !important;
+        margin-bottom: 10px; }
+    .hero .button-animation::before {
+      content: "";
+      position: absolute;
+      border: 5px solid #0077ff;
+      background-color: #0077ff;
+      width: 185px !important;
+      height: 2.3rem;
+      margin-left: 22px;
+      margin-top: 20px;
+      border-radius: 8px;
+      animation: grow 2s 5; }
+    @keyframes grow {
+      from {
+        transform: scaleY(0) scaleX(0); }
+      to {
+        transform: scaleY(1.5) scaleX(1.25);
+        opacity: 0; } }
+    .hero .button-animation .hero-btn {
+      position: relative;
+      border: none;
+      border-radius: 8px;
+      background-color: #0077ff;
+      color: white;
+      width: 200px !important;
+      height: 3.0rem;
+      font-size: 1.25rem;
+      margin: 20px; } }
