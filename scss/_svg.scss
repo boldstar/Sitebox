@@ -1,0 +1,76 @@
+@import 'config';
+
+.st0{fill:$primary;}
+.st1{fill:$secondary;}
+.st2{fill:$alternate;}
+.st3{opacity:0.5;fill:$primary;stroke:$gray;stroke-width:2;stroke-miterlimit:10;}
+.st4{opacity:0.5;fill:$secondary;stroke:$gray;stroke-width:2;stroke-miterlimit:10;}
+.st5{opacity:0.5;fill:$alternate;stroke:$gray;stroke-width:2;stroke-miterlimit:10;}
+
+svg {
+    width: 300px;
+    height: auto;
+    animation-name: rotateSquare;
+    animation-duration: 2.75s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes rotateSquare {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+svg #top_square {
+    animation-name: animateTop;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animateTop {
+    from {
+        transform: translateY(0) translateX(0);
+    }
+    to {
+        transform: translateX(0) translateY(30px);
+    }
+}
+
+
+svg #right_square {
+    animation-name: animateRight;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animateRight {
+    from {
+        transform: translateY(0) translateX(0);
+    }
+    to {
+        transform: translateX(-27px) translateY(-17px);
+    }
+}
+
+
+svg #left_square {
+    animation-name: animateLeft;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animateLeft {
+    from {
+        transform: translateY(0) translateX(0);
+    }
+    to {
+        transform: translateX(27px) translateY(-18px);
+    }
+}
