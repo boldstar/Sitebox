@@ -6,9 +6,22 @@ heroBtn.addEventListener('click', () => {
     if(nav.style.display == 'none') {
         nav.style.display = 'block';
         navbarNav.style.visibility = 'visible';
-        navbarNav.style.flexDirection = 'column';
-        navbarNav.style.position = 'relative';
+        navbarNav.style.marginBottom = '0';
     } else {
         nav.style.display = 'none';
     }
 })
+
+const header = document.getElementById('header');
+
+window.onscroll = function() {
+    stickyHeader();
+}
+
+function stickyHeader() {
+    if(window.pageYOffset > 0) {
+        header.classList.add("sticky")
+    } else {
+        header.classList.remove("sticky")
+    }
+}

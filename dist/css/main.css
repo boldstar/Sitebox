@@ -107,6 +107,11 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif; }
 
+.sticky {
+  position: fixed;
+  width: 100%;
+  background-color: white; }
+
 header {
   position: absolute;
   display: flex;
@@ -117,7 +122,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 15px 10px; }
+    padding: 5px 10px; }
     header .navbar .nav-collapsed {
       display: flex;
       width: 100%;
@@ -125,43 +130,47 @@ header {
     header .navbar a .logo {
       width: auto;
       height: 40px;
-      margin-top: 3px; }
+      margin-top: 8px; }
     header .navbar .navbar-nav {
       display: flex; }
-      header .navbar .navbar-nav .nav-link {
-        margin-left: 40px;
-        color: darkgray;
-        font-weight: bold; }
+      header .navbar .navbar-nav .nav-item {
+        display: inline-block;
+        margin-left: 100px; }
+        header .navbar .navbar-nav .nav-item .nav-link {
+          color: darkgray;
+          font-weight: bold; }
     header .navbar .nav-btn {
       display: none; }
     @media screen and (max-width: 800px) {
-      header .navbar .navbar {
-        padding: 20px 15px;
-        flex-direction: column !important; }
-      header .navbar .nav-btn {
-        margin-top: 5px;
-        margin-right: 10px;
-        position: relative;
-        display: block;
-        border: 1px solid darkgray;
-        border-radius: 3px;
-        padding: 4px 12px;
-        background-color: transparent;
-        font-size: 1.2rem;
-        color: #0077ff; }
+      header .navbar .collapsed-btn {
+        margin-top: 8px; }
+        header .navbar .collapsed-btn .nav-btn {
+          margin-top: 5px;
+          margin-right: 10px;
+          position: relative;
+          display: block;
+          border: 1px solid darkgray;
+          border-radius: 3px;
+          padding: 3px 10px;
+          background-color: transparent;
+          font-size: 1.2rem;
+          color: #0077ff; }
       header .navbar nav {
         display: none; }
         header .navbar nav .navbar-nav {
+          position: relative;
+          flex-direction: column;
           visibility: hidden;
-          transition: 3s ease-in;
           text-align: right;
-          margin-right: 10px; }
+          margin-right: 10px;
+          background-color: white; }
           header .navbar nav .navbar-nav .nav-item {
             margin-bottom: 10px; } }
   @media screen and (max-width: 800px) {
     header .navbar {
-      padding: 20px 15px;
-      flex-direction: column !important; } }
+      padding: 5px 15px;
+      flex-direction: column !important;
+      background-color: white; } }
 
 section {
   position: relative;
