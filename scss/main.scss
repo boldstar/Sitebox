@@ -211,13 +211,18 @@ section {
     }
 
     @media screen and (max-width: 850px) {
+        .hero-background {
+            display: none;
+        }
+
         .inner-desktop {
+            margin-top: 30px;
             flex-direction: column-reverse;
             align-items: center;
+            justify-content: center;
         }
 
         .hero-content {
-            margin-bottom: 50px;
         
             h1 {
                 font-size: 1.75rem !important;
@@ -254,6 +259,7 @@ section {
         }
 
         .button-animation {
+            margin-top: 30px;
 
              .hero-btn {
                 position: relative;

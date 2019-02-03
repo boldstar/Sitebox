@@ -243,16 +243,18 @@ section {
         font-size: 1.25rem;
         margin: 20px; }
   @media screen and (max-width: 850px) {
+    .hero .hero-background {
+      display: none; }
     .hero .inner-desktop {
+      margin-top: 30px;
       flex-direction: column-reverse;
-      align-items: center; }
-    .hero .hero-content {
-      margin-bottom: 50px; }
-      .hero .hero-content h1 {
-        font-size: 1.75rem !important; }
-      .hero .hero-content h2 {
-        font-size: 2.5rem !important;
-        margin-bottom: 10px; }
+      align-items: center;
+      justify-content: center; }
+    .hero .hero-content h1 {
+      font-size: 1.75rem !important; }
+    .hero .hero-content h2 {
+      font-size: 2.5rem !important;
+      margin-bottom: 10px; }
     .hero .button-animation::before {
       content: "";
       position: absolute;
@@ -270,13 +272,15 @@ section {
       to {
         transform: scaleY(1.5) scaleX(1.25);
         opacity: 0; } }
-    .hero .button-animation .hero-btn {
-      position: relative;
-      border: none;
-      border-radius: 8px;
-      background-color: #0077ff;
-      color: white;
-      width: 200px !important;
-      height: 3.0rem;
-      font-size: 1.25rem;
-      margin: 20px; } }
+    .hero .button-animation {
+      margin-top: 30px; }
+      .hero .button-animation .hero-btn {
+        position: relative;
+        border: none;
+        border-radius: 8px;
+        background-color: #0077ff;
+        color: white;
+        width: 200px !important;
+        height: 3.0rem;
+        font-size: 1.25rem;
+        margin: 20px; } }
