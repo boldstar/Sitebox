@@ -45,7 +45,9 @@ header {
                 margin-top: 8px;
             }
         }
-    
+        
+        
+
         .navbar-nav {
             display: flex;
 
@@ -83,20 +85,16 @@ header {
                 }
             }
 
-            nav {
+            .navbar-nav {
                 display: none;
+                position: relative;
+                flex-direction: column;
+                text-align: right;
+                margin-right: 10px;
+                background-color: white;
 
-                .navbar-nav {
-                    position: relative;
-                    flex-direction: column;
-                    visibility: hidden;
-                    text-align: right;
-                    margin-right: 10px;
-                    background-color: white;
-
-                    .nav-item {
-                        margin-bottom: 10px;
-                    }
+                .nav-item {
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -278,3 +276,77 @@ section {
 
 }
 
+.about {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    .about-background {
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        background-image: url('../assets/AboutBackground.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    h2 {
+        color: white;
+        font-size: 2.0rem;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+
+        .about-card {
+            display: flex;
+            margin: 20px;
+            width: 100%;
+            min-height: 250px;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 5px 0 5px 5px rgba(black, .18), -5px 0 5px  5px rgba(black, .18);
+            border-radius: 10px;
+
+            h3 {
+                margin: 5px;
+                font-size: 1.5rem;
+                color: $primary;
+            }
+
+            .about-list {
+                list-style: initial;
+
+                .list-item {
+                    font-weight: 600;
+                    color: $secondary;
+                    margin: 5px;
+                }
+            }
+
+            .about-list:nth-of-type(even) {
+                text-align: right;
+            }
+
+            .about-details {
+                padding: 0 20px;
+                margin-right: 30px;
+            }
+
+            .about-img {
+                max-height: 300px;
+                width: auto;
+                align-self: center;
+                margin-right: 20px;
+            }
+
+        }
+
+        .about-details:nth-of-type(even) {
+            text-align: right;
+        }
+    }
+}

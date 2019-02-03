@@ -1,14 +1,12 @@
 const heroBtn = document.getElementById('nav-btn');
-const nav = document.getElementById('nav');
 const navbarNav = document.getElementById('navbar-nav');
 
 heroBtn.addEventListener('click', () => {
-    if(nav.style.display == 'none') {
-        nav.style.display = 'block';
-        navbarNav.style.visibility = 'visible';
+    if(navbarNav.style.display == 'none') {
+        navbarNav.style.display = 'flex';
         navbarNav.style.marginBottom = '0';
     } else {
-        nav.style.display = 'none';
+        navbarNav.style.display = 'none';
     }
 })
 
