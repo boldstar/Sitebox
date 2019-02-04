@@ -118,7 +118,7 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .hero {
@@ -412,10 +412,14 @@ section {
     }
 
     @media screen and (max-width: 850px) {
+        
         .about-background {
             display: none;
         }
 
+        h2 {
+            color: $primary;
+        }
         .about-card {
             flex-direction: column;
             align-items: center;
@@ -445,7 +449,7 @@ section {
     width: 100%;
     height: auto;
     background-color: $secondary;
-    z-index: -2;
+    z-index: 0;
 
     .portfolio-background {
         position: absolute;
@@ -486,13 +490,15 @@ section {
                 display: block;
                 border-radius: 10px;
                 background: #202020;
+                border: 1px solid #202020;
                 height: 275px;
                 width: 20rem;
                 color: white;
+                padding: 2px;
     
                 .portfolio-img {
                     height: 175px;
-                    width: 20rem;
+                    width: 19.65rem;
                     border-radius: 10px 10px 0 0;
                 }
     
@@ -567,7 +573,7 @@ section {
                 
                             .portfolio-img {
                                 height: 150px !important;
-                                width: 20rem !important;
+                                width: 19.65rem !important;
                                 border-radius: 10px 10px 0 0;
                             }
                         }
@@ -580,7 +586,7 @@ section {
 .contact {
     position: relative;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
 
     .contact-background {
         position: absolute;
@@ -599,6 +605,7 @@ section {
     }
 
     form {
+        z-index: 1;
         display: flex;
         flex-direction: column;
         align-items: center;

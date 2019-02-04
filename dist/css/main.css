@@ -373,6 +373,8 @@ section {
   @media screen and (max-width: 850px) {
     .about .about-background {
       display: none; }
+    .about h2 {
+      color: #0077ff; }
     .about .about-card {
       flex-direction: column;
       align-items: center; }
@@ -390,7 +392,7 @@ section {
   width: 100%;
   height: auto;
   background-color: #009aff;
-  z-index: -2; }
+  z-index: 0; }
   .portfolio .portfolio-background {
     position: absolute;
     width: 100%;
@@ -421,12 +423,14 @@ section {
         display: block;
         border-radius: 10px;
         background: #202020;
+        border: 1px solid #202020;
         height: 275px;
         width: 20rem;
-        color: white; }
+        color: white;
+        padding: 2px; }
         .portfolio .portfolio-body-wrapper .portfolio-content .portfolio-card .portfolio-img {
           height: 175px;
-          width: 20rem;
+          width: 19.65rem;
           border-radius: 10px 10px 0 0; }
         .portfolio .portfolio-body-wrapper .portfolio-content .portfolio-card h4 {
           margin: 5px;
@@ -476,13 +480,13 @@ section {
         color: white; }
         .portfolio-body-wrapper .portfolio-content .portfolio-card .portfolio-img {
           height: 150px !important;
-          width: 20rem !important;
+          width: 19.65rem !important;
           border-radius: 10px 10px 0 0; } }
 
 .contact {
   position: relative;
   width: 100%;
-  z-index: -1; }
+  z-index: 0; }
   .contact .contact-background {
     position: absolute;
     width: 100%;
@@ -496,6 +500,7 @@ section {
     color: white;
     font-size: 2.0rem; }
   .contact form {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
