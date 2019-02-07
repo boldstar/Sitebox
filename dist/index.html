@@ -190,11 +190,16 @@
     <section class="contact">
         <div class="contact-background"></div>
         <h2>Contact</h2>
-        <form action="">
+        <form data-netlify="true" netlify-honeypot="bot-field" name="Sitebox Form Submissions">
+            <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <input type="text" placeholder="Business Name" name="Business Name">
             <input type="text" placeholder="Name" name="Name">
             <input type="text" placeholder="Phone Number" name="Phone Number">
             <input type="text" placeholder="Email" name="Email">
+            <textarea name="Message" id="message" cols="30" rows="5" placeholder="Brief message goes here..." class="textarea"></textarea>
+            <div data-netlify-recaptcha="true"></div>
             <button class="form-btn" type="button">Submit</button>
         </form>
     </section>
