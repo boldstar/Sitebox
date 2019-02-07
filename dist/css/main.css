@@ -411,7 +411,8 @@ header {
       border: 1px solid darkgray;
       border-radius: 5px; }
     .contact form .racaptcha {
-      width: 100%; }
+      width: 100%;
+      align-self: flex-start; }
     .contact form .form-btn {
       width: 100%;
       margin-top: 10px;
