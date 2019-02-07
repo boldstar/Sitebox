@@ -49,7 +49,10 @@
             font-size: 1.5rem;
             border: 1px solid $gray;
             border-radius: 5px;
-            font-weight: 600;
+        }
+
+        .racaptcha {
+            width: 100%;
         }
 
         .form-btn {
