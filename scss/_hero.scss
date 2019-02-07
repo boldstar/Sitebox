@@ -1,0 +1,160 @@
+@import 'config';
+
+.hero {
+    justify-content: center;
+    min-height: 100vh;
+
+    .hero-background {
+        position: absolute;
+        background-image: url('../assets/HeroBackground.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .desktop-img {
+        margin-top: 50px;
+        position: absolute;
+        max-width: 1000px;
+        height: auto;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .desktop-img {
+            display: none;
+        }
+    }
+
+    .inner-desktop {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 900px;
+
+        .hero-content {
+            text-align: center;
+            align-self: center;
+            color: $gray;
+    
+             h1 {
+                 margin: 2px 0;
+                 font-size: 2rem;
+             }
+    
+             h2 {
+                 margin: 2px 0;
+                 font-size: 2.8rem;
+             }
+             
+            .button-animation::before {
+                content: "";
+                position: absolute;
+                border: 5px solid $primary;
+                background-color: $primary;
+                width: 285px;
+                height: 2.3rem;
+                margin-left: 22px;
+                margin-top: 20px;
+                border-radius: 8px;
+                animation: grow 2s 5;
+            }
+            
+            @keyframes grow {
+                from {
+                    transform: scaleY(0) scaleX(0);
+                }
+    
+                to {
+                    transform: scaleY(1.5) scaleX(1.25);
+                    opacity: 0;
+                }
+            }
+    
+            .button-animation {
+    
+                 .hero-btn {
+                    position: relative;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: $primary;
+                    color: white;
+                    width: 300px;
+                    height: 3.0rem;
+                    font-size: 1.25rem;
+                    margin: 20px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .hero-background {
+            display: none;
+        }
+
+        .inner-desktop {
+            margin-top: 30px;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+        
+            h1 {
+                font-size: 1.75rem !important;
+            }
+
+            h2 {
+                font-size: 2.5rem !important;
+                margin-bottom: 10px;
+            }
+        }
+
+        .button-animation::before {
+            content: "";
+            position: absolute;
+            border: 5px solid $primary;
+            background-color: $primary;
+            width: 185px !important;
+            height: 2.3rem;
+            margin-left: 22px;
+            margin-top: 20px;
+            border-radius: 8px;
+            animation: grow 2s 5;
+        }
+        
+        @keyframes grow {
+            from {
+                transform: scaleY(0) scaleX(0);
+            }
+
+            to {
+                transform: scaleY(1.5) scaleX(1.25);
+                opacity: 0;
+            }
+        }
+
+        .button-animation {
+            margin-top: 30px;
+
+             .hero-btn {
+                position: relative;
+                border: none;
+                border-radius: 8px;
+                background-color: $primary;
+                color: white;
+                width: 200px !important;
+                height: 3.0rem;
+                font-size: 1.25rem;
+                margin: 20px;
+            }
+        }
+
+    }
+
+}

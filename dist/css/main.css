@@ -1,112 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-.container {
-  max-width: 1120px;
-  margin: 0 auto; }
-
-ul {
-  list-style: none; }
-
-a {
-  text-decoration: none; }
-
-.st0 {
-  fill: #0077ff; }
-
-.st1 {
-  fill: #009aff; }
-
-.st2 {
-  fill: #2cb5de; }
-
-.st3 {
-  opacity: 0.5;
-  fill: #0077ff;
-  stroke: darkgray;
-  stroke-width: 2;
-  stroke-miterlimit: 10; }
-
-.st4 {
-  opacity: 0.5;
-  fill: #009aff;
-  stroke: darkgray;
-  stroke-width: 2;
-  stroke-miterlimit: 10; }
-
-.st5 {
-  opacity: 0.5;
-  fill: #2cb5de;
-  stroke: darkgray;
-  stroke-width: 2;
-  stroke-miterlimit: 10; }
-
-svg {
-  width: 300px;
-  height: auto;
-  animation-name: rotateSquare;
-  animation-duration: 2.75s;
-  animation-iteration-count: infinite;
-  animation-direction: normal; }
-
-@keyframes rotateSquare {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-
-svg #top_square {
-  animation-name: animateTop;
-  animation-duration: 1.25s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; }
-
-@keyframes animateTop {
-  from {
-    transform: translateY(0) translateX(0); }
-  to {
-    transform: translateX(0) translateY(30px); } }
-
-svg #right_square {
-  animation-name: animateRight;
-  animation-duration: 1.25s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; }
-
-@keyframes animateRight {
-  from {
-    transform: translateY(0) translateX(0); }
-  to {
-    transform: translateX(-27px) translateY(-17px); } }
-
-svg #left_square {
-  animation-name: animateLeft;
-  animation-duration: 1.25s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; }
-
-@keyframes animateLeft {
-  from {
-    transform: translateY(0) translateX(0); }
-  to {
-    transform: translateX(27px) translateY(-18px); } }
-
-.container {
-  max-width: 1120px;
-  margin: 0 auto; }
-
-ul {
-  list-style: none; }
-
-a {
-  text-decoration: none; }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif; }
-
 .sticky {
   position: fixed;
   width: 100%;
@@ -171,12 +63,6 @@ header {
       padding: 5px 15px;
       flex-direction: column !important;
       background-color: white; } }
-
-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
 
 .hero {
   justify-content: center;
@@ -553,3 +439,107 @@ footer {
     footer .footer {
       flex-direction: column;
       align-items: center; } }
+
+.st0 {
+  fill: #0077ff; }
+
+.st1 {
+  fill: #009aff; }
+
+.st2 {
+  fill: #2cb5de; }
+
+.st3 {
+  opacity: 0.5;
+  fill: #0077ff;
+  stroke: darkgray;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
+
+.st4 {
+  opacity: 0.5;
+  fill: #009aff;
+  stroke: darkgray;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
+
+.st5 {
+  opacity: 0.5;
+  fill: #2cb5de;
+  stroke: darkgray;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
+
+svg {
+  width: 300px;
+  height: auto;
+  animation-name: rotateSquare;
+  animation-duration: 2.75s;
+  animation-iteration-count: infinite;
+  animation-direction: normal; }
+
+@keyframes rotateSquare {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+svg #top_square {
+  animation-name: animateTop;
+  animation-duration: 1.25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+@keyframes animateTop {
+  from {
+    transform: translateY(0) translateX(0); }
+  to {
+    transform: translateX(0) translateY(30px); } }
+
+svg #right_square {
+  animation-name: animateRight;
+  animation-duration: 1.25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+@keyframes animateRight {
+  from {
+    transform: translateY(0) translateX(0); }
+  to {
+    transform: translateX(-27px) translateY(-17px); } }
+
+svg #left_square {
+  animation-name: animateLeft;
+  animation-duration: 1.25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+@keyframes animateLeft {
+  from {
+    transform: translateY(0) translateX(0); }
+  to {
+    transform: translateX(27px) translateY(-18px); } }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }

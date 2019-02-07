@@ -1,0 +1,103 @@
+@import 'config';
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px 10px;
+
+        .nav-collapsed {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        a {
+            
+            .logo {
+                width: auto;
+                height: 40px;
+                margin-top: 8px;
+            }
+        }
+        
+        
+
+        .navbar-nav {
+            display: flex;
+
+            .nav-item {
+                display: inline-block;
+                margin-left: 100px;
+                
+                .nav-link {
+                    color: $gray;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+    
+        }
+
+        .nav-btn {
+            display: none;
+        }
+
+        @media screen and (max-width: 800px) {
+            .collapsed-btn {
+                margin-top: 8px;
+
+                .nav-btn {
+                    margin-top: 5px;
+                    margin-right: 10px;
+                    position: relative;
+                    display: block;
+                    border: 1px solid $gray;
+                    border-radius: 3px;
+                    padding: 3px 10px;
+                    background-color: transparent;
+                    font-size: 1.2rem;
+                    color: $primary;
+                }
+            }
+
+            .navbar-nav {
+                display: none;
+                position: relative;
+                flex-direction: column;
+                text-align: right;
+                margin-right: 10px;
+                background-color: white;
+
+                .nav-item {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    
+    @media screen and (max-width: 800px) {
+        .navbar {
+            padding: 5px 15px;
+            flex-direction: column !important;
+            background-color: white;
+        }
+    }
+}

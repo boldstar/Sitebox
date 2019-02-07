@@ -2,16 +2,4 @@ $primary: rgb(0, 119, 255);
 $secondary: rgb(0, 154, 255);
 $alternate: rgb(44, 181, 222);
 $gray: rgb(169, 169, 169);
-
-.container {
-    max-width: 1120px;
-    margin: 0 auto;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
+$dark: rgb(32, 32, 32);
